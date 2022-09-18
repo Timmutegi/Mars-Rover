@@ -15,7 +15,7 @@ class MarsRover:
         """
         if top_right_coordinates['x'] < 0 or top_right_coordinates['y'] < 0:
             raise ValueError
-            
+
         self.top_right_coordinates = top_right_coordinates
         self.compass = {
             'N' : {
@@ -48,6 +48,9 @@ class MarsRover:
         Return:
             final_position (dict): Contains the final coordinates and orientation of the rover
         """
+        if x < 0 or y < 0:
+            raise ValueError
+            
         rover_orientation = orientation
 
         for instruction in instructions:
