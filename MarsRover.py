@@ -13,6 +13,9 @@ class MarsRover:
         Returns:
             None
         """
+        if top_right_coordinates['x'] < 0 or top_right_coordinates['y'] < 0:
+            raise ValueError
+            
         self.top_right_coordinates = top_right_coordinates
         self.compass = {
             'N' : {
