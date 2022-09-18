@@ -1,4 +1,3 @@
-from curses.panel import top_panel
 import pytest
 from MarsRover import MarsRover
 
