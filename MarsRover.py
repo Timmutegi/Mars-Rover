@@ -48,7 +48,10 @@ class MarsRover:
         Return:
             final_position (dict): Contains the final coordinates and orientation of the rover
         """
-        if x < 0 or y < 0:
+        if x < 0 or x > self.top_right_coordinates['x']:
+            raise ValueError
+
+        if y < 0 or y > self.top_right_coordinates['y']:
             raise ValueError
             
         rover_orientation = orientation
