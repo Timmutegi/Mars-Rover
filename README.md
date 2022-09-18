@@ -25,3 +25,6 @@ lower-left coordinates are assumed to be 0, 0.
 been deployed. Each rover has two lines of input. The first line gives the
 rover's position, and the second line is a series of instructions telling
 the rover how to explore the plateau.
+
+## Output
+- The output for each rover should be its final co-ordinates and heading.
