@@ -1,10 +1,17 @@
 class MarsRover:
-    # (1, 2) N
-    # L M L M L M L M M
+    """
+    Class for the Mars Rover
+    """
     def __init__(self, top_right_coordinates) -> None:
         """
         Initializes the compass directions with mappings for 90 degrees 
         to the left or right of each compass direction
+
+        Parameters:
+            top_right_coordinates (dict): Dictionary containing the x, y coordinates 
+            of the upper right coordinates of the plateau
+        Returns:
+            None
         """
         self.top_right_coordinates = top_right_coordinates
         self.compass = {
